@@ -1,0 +1,61 @@
+@import './animate.less';
+@import './fonts.less';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+a {
+    text-decoration: none;
+    transition: .3s;
+    user-select: none;
+}
+input {
+    outline: none;
+    border: none;
+}
+
+
+@breakpoint-modile: ~"(max-width: 572px)";
+@light_green : #6aa172;
+@dark_green : #35533a;
+
+
+.icon_base {
+    fill: @light_green;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s;
+    overflow-y: hidden;
+}
+
+
+
+.icon_base:hover {
+    opacity: 70%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

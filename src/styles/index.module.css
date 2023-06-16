@@ -1,0 +1,132 @@
+@keyframes animateSlideCartOpen {
+  0% {
+    right: -55vw;
+    opacity: 0;
+  }
+  50% {
+    right: -20vw;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes animateSlideCartClose {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  50% {
+    right: -20vw;
+    opacity: 0;
+  }
+  100% {
+    right: -55vw;
+    opacity: 0;
+  }
+}
+@keyframes animateSlideMenuOpen {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes animateSlideMenuClose {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100vh;
+  }
+}
+@keyframes animateSlideAuthOpen {
+  from {
+    right: -25vw;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes animateSlideAuthClose {
+  from {
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: -25vw;
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/public/fonts/Unbounded/Unbounded-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/public/fonts/Unbounded/static/Unbounded-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: bold;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  user-select: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.icon_base {
+  fill: #6aa172;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow-y: hidden;
+}
+.icon_base:hover {
+  opacity: 70%;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

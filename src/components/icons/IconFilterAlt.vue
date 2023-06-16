@@ -1,0 +1,12 @@
+<template>
+    <div class="icon_base">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40"><path d="M440 896q-17 0-28.5-11.5T400 856V616L163.333 314q-14.333-18-4.166-38 10.166-20 32.833-20h576q22.667 0 32.833 20 10.167 20-4.166 38L560 616v240q0 17-11.5 28.5T520 896h-80Zm40-286.666 226.001-286.668H253.999L480 609.334Zm0 0Z"/></svg>
+    </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+

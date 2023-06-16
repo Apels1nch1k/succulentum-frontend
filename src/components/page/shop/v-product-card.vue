@@ -18,7 +18,7 @@
             </div>
             
             
-            <UIVButton @click="addToCart(product)" v-if="!isCart(getCart, product.id)" :bgColor="'#6aa172'" :widthVW="50" :heightVH="3.5"> В корзину</UIVButton>
+            <UIVButton @click="addToCart(product)" v-if="!isCart(getCart, product.id)" :bgColor="'#6aa172'" :widthVW="70" :heightVH="3.5"> В корзину</UIVButton>
             <p v-else class="v-product-card__info__inCart">Уже в корзине</p>
         </div>
     </div>

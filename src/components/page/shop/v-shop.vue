@@ -99,7 +99,7 @@ watch(() => obj.search,
     flex-wrap: wrap;
     gap: 2vw;
     max-width: 80vw;
-    
+    margin-bottom: 5vh;
 }
 
 </style>

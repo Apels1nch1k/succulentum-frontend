@@ -65,7 +65,7 @@ const url = process.env.VUE_APP_API_BASE
                                 
                                 </li>
                                
-                                <li><router-link to="/" @click="closeMenu" class="v-menu-main__name__page">Контакты</router-link></li>
+                                <!-- <li><router-link to="/" @click="closeMenu" class="v-menu-main__name__page">Контакты</router-link></li> -->
                                 <li v-if="isAuthenticated"><a @click="logout()" class="v-menu-main__name__page">Выйти</a></li>
                                 <li v-else><a @click="setVisibleAuth()" class="v-menu-main__name__page">Войти</a></li>
                             </ul>

@@ -52,6 +52,7 @@ header{
     position: fixed;
     visibility: visible;
     width: 100vw;
+    overflow-y: hidden;
 }
 .v-header__container{
     display: flex;
@@ -86,7 +87,7 @@ header{
     position: absolute;
     z-index: 30;
     top: 6vh;
-    right: 6vh;
+    right: 3vw;
     background: @light_green;
     height: 2.5vh;
     width: 2.5vh;
@@ -101,7 +102,7 @@ header{
 
     }
        @media @breakpoint-modile {
-        right: 1vh;
+        right: 3vw;
     }
 
 }

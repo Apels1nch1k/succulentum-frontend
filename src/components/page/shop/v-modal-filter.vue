@@ -5,16 +5,10 @@
             <p v-for="category in allCategory" :key="category.id" :value="category" >
             <span @click="searchCategory(category.id)"
             >
-
-
                 {{ category.name }}
-
-
             </span>
         </p>
         </div>
-
-
     </div>
 </template>
 
@@ -28,7 +22,7 @@ const allCategory = computed(() => store.getters.allCategory)
 
 store.dispatch('getAllCategory')
 function searchCategory(category) {
-    store.dispatch('getAllProduct', category)
+    store.dispatch('getAllProduct', '', category)
 }
 
 </script>

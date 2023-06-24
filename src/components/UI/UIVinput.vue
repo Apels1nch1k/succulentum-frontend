@@ -56,13 +56,14 @@ watch(value, () => {
         
         v-model="value"
         :style="{
-            'height':  height,
-            'width': width ,
+            'height': height,
+            'width': width,
 
         }"
         :class="{
-            'error': errors >= 1
+            'error': errors >= 1,
         }"
+
         >
 
         <textarea

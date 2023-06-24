@@ -1,6 +1,6 @@
 <template>
     <div class="v-quantity">
-        <div class="" @click="value--" >-</div>
+        <div class="" @click="ValueAdd()" >-</div>
         <input type="number" v-model.number="value" min="1"> 
         <div class="" @click="value++">+</div>
     </div>
@@ -17,7 +17,14 @@ const props = defineProps({
 })
 const value = ref(props.modelValue);
 
-
+function ValueAdd(){
+    if(value.value === 0){
+        value.value + 0   
+    }
+    else{
+        value.value--
+    }
+}
 
 
 watch(value, () => {

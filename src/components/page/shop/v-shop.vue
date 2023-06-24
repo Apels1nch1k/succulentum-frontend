@@ -3,8 +3,7 @@
         <div class="v-shop__container">
             <div class="v-shop__filter">
                 <div class="v-shop__filter__search">
-                    <IconSearch24  class="v-shop_filter__search__icon"/>
-                    <input type="search" placeholder="Поиск" v-model="obj.search">
+                    <UIVInput width="75vw"  type="search" placeholder="Поиск" v-model="obj.search" />
                 </div>                
                 <div class="v-shop__filter_category__icon" @click="modalFilter()"> 
                     <IconFilterAlt/>
@@ -24,7 +23,7 @@
 </template>
 
 <script setup>
-import IconSearch24 from '@/components/icons/IconSearch24.vue'
+
 import IconFilterAlt from '@/components/icons/IconFilterAlt.vue'
 import VProductCard from './v-product-card.vue'
 import { useStore } from 'vuex'
@@ -33,6 +32,8 @@ import vModalFilterVue from './v-modal-filter.vue'
 
 const store = useStore()
 const search = ''
+
+const category = computed(() => store.getters.category)
 const obj = reactive({
     search
 })
@@ -43,7 +44,7 @@ const modalFilter = ()=> store.dispatch('modalFilter')
 store.dispatch('getAllProduct')
 watch(() => obj.search,
     (search) => {
-    store.dispatch('getAllProduct', search)
+    store.dispatch('getAllProduct', search, category )
 })
 </script>
 
@@ -73,16 +74,15 @@ watch(() => obj.search,
 .v-shop__filter__search{
     display: flex;
     align-items: center;
-    border-bottom: 2px solid @light_green;
     
-    input {
-        height: 3.5vh;
-        width: 74vw;
-        outline-style: none;
-        border: none;
-        border-radius: 1vh;
-        padding: 0 2vh;
-    }
+    // input {
+    //     height: 3.5vh;
+    //     width: 74vw;
+    //     outline-style: none;
+    //     border: none;
+    //     border-radius: 1vh;
+    //     padding: 0 2vh;
+    // }
     div{
         display: flex;
         align-items: center;

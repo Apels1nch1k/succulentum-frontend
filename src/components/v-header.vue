@@ -10,8 +10,8 @@
                         succulentum
                     </h1>
                 </div>
-                <div class="" >
-                    <IconShoppingBag  class="" @click="setCart()"/>
+                <div class="v-header__cart" @click="setCart()">
+                    <IconShoppingBag  class="" />
                     <div class="v-header__cart__count">
                         <span > {{ cartItemCount }}</span>
                     </div>
@@ -105,6 +105,14 @@ header{
         right: 3vw;
     }
 
+}
+
+.v-header__cart{
+    transition: .3s;
+    cursor: pointer;
+}
+.v-header__cart:hover{
+    opacity: 70%;
 }
 
 </style>
